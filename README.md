@@ -13,4 +13,5 @@ find the existing data across domains and who owns it.
 
 
 Discussed Solution
+
 <img width="455" alt="image" src="https://github.com/siva-suthan/self-service-data-platform/assets/56590665/503f2da1-4c2f-4bd2-b720-1d3233afe349">
