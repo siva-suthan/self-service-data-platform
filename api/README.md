@@ -17,30 +17,33 @@ The sample python template api-scraping.py can be used to fetch data from differ
 
 DE person can calls this endpoint to schedule a new api for data fetching.
 
-EXAMPLE
-curl -X POST https://api.dataplatform.com/scrapapi/scheduleapi \
+	curl -X POST https://api.dataplatform.com/scrapapi/scheduleapi \
     -H 'content-type: application/json'
     -d '{“access_token”: “”,
-	“api_name”: "",
-	“target_table” : “db.schema.table”,
+		“api_name”: "",
+		“target_table” : “db.schema.table”,
         "host":,
         "port":,
         "username":,
         "password":,
         "python-template" : "api-scraping-1.py"
-	“cron” : “0 15 10 ? * *”
+		“cron” : “0 15 10 ? * *”
 	}'
+
+
 Sample response
-{
-  "status": 200,
-  “body” : {	“jobid” : “123a”,
-		“ScheduleddAt” : <timestamp>,
-		“api_name”: "",
-		"lambda/glue_name":,
-		"arn":,
-		"secret_id":
-	}
-}
+
+		{
+		  "status": 200,
+		  “body” : {	“jobid” : “123a”,
+				“ScheduleddAt” : <timestamp>,
+				“api_name”: "",
+				"lambda/glue_name":,
+				"arn":,
+				"secret_id":
+			}
+		}
+
 
 ## /scrapapi/modifyapi
 	curl -X POST https://api.dataplatform.com/scrapapi/modifyapi \
@@ -59,17 +62,18 @@ Sample response
 	"secret_id":,
 	}'
 Sample response
-{
-  "status": 200,
-  “body” : {	“jobid” : “123a”,
-		“ScheduleddAt” : <timestamp>,
-		“api_name”: "",
-		"lambda/glue_name":,
-		"lambda/glue_arn":,
-		"secret_id":
-		
+
+	{
+	  "status": 200,
+	  “body” : {	“jobid” : “123a”,
+			“ScheduleddAt” : <timestamp>,
+			“api_name”: "",
+			"lambda/glue_name":,
+			"lambda/glue_arn":,
+			"secret_id":
+		}
 	}
-}
+
 
 ## /scrapapi/deleteapi
 	curl -X POST https://api.dataplatform.com/scrapapi/deleteapi \
@@ -83,10 +87,14 @@ Sample response
 	"secret_id":
 	}'
 Sample response
-{
-  "status": 200,
-  “body” : {	“message” : “”,
-		“timestamp” : <timestamp>,	
+	
+	{
+  	"status": 200,
+  	“body” : {	“message” : “”,
+				“timestamp” : <timestamp>,	
+		}
 	}
-}
+
+
+
 
