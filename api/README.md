@@ -4,6 +4,9 @@ The sample python template api-scraping.py can be used to fetch data from differ
 
 ## Example Flow Diagram
 
+![image](https://github.com/siva-suthan/self-service-data-platform/assets/56590665/bafbefb2-b74c-499e-a51e-276a18ac00d1)
+
+
 <img width="557" alt="image" src="https://github.com/siva-suthan/self-service-data-platform/assets/56590665/bc9b40ea-1b89-489c-a971-c80cb7476323">
 
 1. DE person can hit the either one of the api endpoint for api schedule or delete or modify.
